@@ -1,0 +1,254 @@
+/*-----------------------------------------------------------------------------
+	Stylesheet for 'Admin CSS Override' extension;
+	CSS rules placed here will override Symphony Admin styles;
+
+    colors: 
+    primary: 212121;
+
+-----------------------------------------------------------------------------*/
+
+#login{
+	background-color: #212121;
+}
+
+#login .frame {
+	border-radius:2px;
+	box-shadow: 0px 2px 8px rgba(0,0,0,0.17);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin:0px !important;
+	transform:translateX(-50%) translateY(-50%);
+	border:none;
+	background-color: #fff;
+}
+
+#login .frame h1 {
+    margin: -1.1rem -1.1rem 1.5rem;
+    padding: 32px 1.1rem 0px 1.1rem;
+    color: #8bc34a;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 26px;
+    border-radius: 6px 6px 0 0;
+    background: transparent;
+}
+
+#login .action-link {
+    float: left;
+    margin-top: 6px;
+}
+
+button{
+	color: #fff;
+	text-transform: uppercase;
+	border: none;
+	box-shadow: 0px 2px 4px rgba(0,0,0,0.17);
+	background: #212121;
+	border-radius: 2px;
+	padding: 4px 16px;
+	transition: all .3s ease-in-out;
+}
+
+button:hover{
+	background: #2196f3;
+	color: #fff;
+	box-shadow: 0px 4px 8px rgba(0,0,0,0.24);
+}
+
+a {
+    color: #283593;
+    border-bottom: 1px solid #e3f2fd;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+a:hover, .inactive a:hover {
+    color: #8bc34a;
+    border-bottom-color: rgba(0,0,0,.3);
+}
+
+input, textarea, select[multiple], .field-value-readonly{
+	border: solid 1px #e3f2fd;
+	padding: 8px 10px;
+	height: auto;
+    border-radius:2px;
+}
+
+label{
+	color: #424242;
+}
+
+#header h1 {
+    position: relative;
+    padding: 1.8rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1;
+    background: #212121;
+    text-shadow: none;
+    z-index: 10;
+}
+
+#header h1 a, #session a {
+    color: #fff;
+    border: none;
+}
+
+#nav {
+    border: none;
+    background:#212121;
+    box-shadow: 0px 2px 4px rgba(0,0,0,0.24);
+    color:#fff;
+}
+
+#nav>ul>li {
+    color: rgba(255,255,255,0.7);
+    text-shadow:none;
+    border:none;
+    border-bottom:solid 2px #fff;
+    margin-right: 4px;
+    transition: all .3s ease-in-out;
+}
+
+#nav>ul>li.active {
+    background: transparent;
+    text-shadow: none;
+    border-color: #ffd740;
+}
+
+#nav>ul>li:hover, #nav>ul>li.active:hover {
+    color: #ffd740;
+    background: transparent;
+}
+
+#nav li ul {
+    border: none;
+    top:2.6rem;
+    border-radius:2px;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.24);
+    transition: all .2s ease-in;
+    background: #424242
+}
+
+#nav ul a:hover {
+    color: #fff;
+    border: .1rem solid #303030;
+    background: #303030;
+    text-shadow: none;
+}
+
+#nav ul a{
+    color:rgba(255,255,255,0.7);
+}
+
+input[type=submit], button, .button, .apply-button-left, .apply-button-right, .apply-label-left, .apply-label-right {
+	padding: 4px 8px;
+    border: none;
+    border-radius: 2px;
+    background: #424242;
+    color: #e0e0e0;
+    box-shadow: 0px 1px 4px rgba(0,0,0,0.17);
+    text-transform: uppercase;
+    transition: all .2s ease-in;  
+}
+
+a.button{
+	background: transparent;
+	text-transform: uppercase;
+	border:none;
+	box-shadow: none;
+}
+
+input[type=submit]:hover, input[type=submit]:active, input[type=submit]:focus, button:hover, button:active, button:focus, .button:hover, .button:active, .button:focus {
+    color: rgba(255,255,255,0.7);
+    border-color: rgba(0,0,0,.35);
+    background:transparent;
+    box-shadow: 0px 0px 2px rgba(255,255,255,0.30);
+    cursor: pointer;
+}
+
+select{
+    border: solid 1px #e3f2fd;
+    height: 33px;
+    border-radius:2px;
+}
+
+button.create, .button.create, input[name="action[save]"] {
+    color: #fff;
+    background:#8bc34a;
+    box-shadow: 0px 1px 4px rgba(0,0,0,0.17);
+}
+
+button.create:hover, button.create:active, button.create:focus, .button.create:hover, .button.create:active, .button.create:focus, input[name="action[save]"]:hover {
+    background:#9ccc65;
+    color:#fff;
+}
+
+button.delete:hover, button.delete:active, button.delete:focus, .button.delete:hover, .button.delete:active, .button.delete:focus {
+    color:#fff;
+    background:#d32f2f;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.24);
+}
+
+#breadcrumbs .inactive span {
+    color: #9e9e9e;
+    font-size: 80%;
+    margin-top: 4px;
+}
+#breadcrumbs a, #breadcrumbs span {
+    text-shadow:none;
+    color:rgba(255,255,255,.7);
+}
+
+#breadcrumbs a:hover, #breadcrumbs a:focus {
+    color: #fff;
+    border-bottom-color: #a9a9a9;
+}
+
+.apply select{
+	margin: 6px 0 0 0;
+    height: auto;
+}
+
+.apply button, .apply-button-right, .apply-button-left, .apply-label-right, .apply-label-left {
+    float: right;
+    height: calc(100% - .1rem);
+    margin: 0;
+    border: none;
+    border-right: none;
+    border-left: .1rem solid rgba(0,0,0,.15);
+    border-radius: 0 2px 2px 0;
+    background: #F4F4F4;
+    color: #424242;
+}
+
+.apply, .apply.inactive:hover{
+	height: auto;
+}
+
+.frame .instance:last-of-type .content {
+    border-radius: 0 0 2px 2px;
+}
+.collapsible .content {
+    background: #f5f5f5;
+}
+
+.frame{
+    border-radius: 2px;
+    box-shadow: 0px 2px 8px rgba(0,0,0,0.17);
+}
+
+#context{
+    background-color: #303030;
+    color:#fff;
+}
+
+tr:nth-child(odd).selected td {
+    background: #424242;
+}
+tr.selected td {
+    border-top: .1rem solid #303030;
+    border-bottom: .1rem solid #303030;
+    background-color: #303030;
+}
